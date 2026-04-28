@@ -1,0 +1,68 @@
+/* Tüm uygulamayı ortalayan ana kolon/kart */
+.todo-container {
+  max-width: 600px;       /* Maksimum genişlik vererek bir kolon gibi davranmasını sağlıyoruz */
+  margin: 50px auto;      /* Yukarıdan 50px boşluk bırakır, sağdan ve soldan (auto) tam ortalar! */
+  padding: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  border-radius: 12px;    /* Köşeleri yumuşatır */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Etrafına hafif şık bir gölge verir */
+}
+
+/* Girdi alanı ve butonun yan yana güzel durması için */
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.todo-input {
+  flex-grow: 1;           /* Input'un kalan tüm boşluğu kaplamasını sağlar */
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.btn-add {
+  background-color: #0d6efd;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn-add:hover {
+  background-color: #0b5ed7; /* Üzerine gelince biraz koyulaşır */
+}
+
+/* Görev satırları için tasarım */
+.todo-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  border-bottom: 1px solid #eee; /* Altlarına ince bir çizgi çeker */
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+}
+
+/* Listelerin başındaki noktaları (bullet) kaldırır ve sıfırlar */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
